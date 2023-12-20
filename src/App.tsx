@@ -4,13 +4,13 @@ import { Canvas } from '@react-three/fiber'
 
 function App() {
   return (
-    <div id="canvas-container">
+    <div style={{ width: "75vw", height: "75vh" }}>
       <Canvas>
         <ambientLight />
         <directionalLight />
         <mesh>
           <boxGeometry args={[4, 4, 4]}/>
-          <meshStandardMaterial />
+          <meshBasicMaterial color={0x00ff00} wireframe />
         </mesh>
       </Canvas>
     </div>
